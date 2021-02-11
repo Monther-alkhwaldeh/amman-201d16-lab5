@@ -33,6 +33,7 @@ Test this function by hand in the console to get it working, and when you think 
     //eslint-disable-line
     let mult=a*b;
     return[mult,'The product of '+a+' and '+b+' is '+mult+'.'];
+    
   }
 
 multiply();
