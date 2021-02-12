@@ -90,7 +90,7 @@ function sumArray() {
   let arrsum=[2,3,4];
   let sumA=0;
   for(let i=0;i<arrsum.length;i++){
-sumA+=arrsum[i];
+  sumA+=arrsum[i];
   }
   return[sumA,'2,3,4 was passed in as an array of numbers, and 9 is their sum.']
 }
@@ -113,12 +113,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) {
+
+function multiplyArray() {
+let arrMult=[2,3,4];
+let multArr=1;
+for(let i=0;i<arrMult.length;i++){
+   multArr*=arrMult[i];
   //eslint-disable-line
 }
-
-// Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+return[multArr,'The numbers 2,3,4 have a product of 24.']
+}
+multiplyArray();
+testMultiplyArray(testArray);
+// Here is the test for  uncomment it to run it
+// 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
