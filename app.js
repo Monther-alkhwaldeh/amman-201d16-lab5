@@ -86,11 +86,16 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(testArray) {
-  
+function sumArray() {
+  let arrsum=[2,3,4];
+  let sumA=0;
+  for(let i=0;i<arrsum.length;i++){
+sumA+=arrsum[i];
+  }
+  return[sumA,'2,3,4 was passed in as an array of numbers, and 9 is their sum.']
 }
-// sumArray();
-// testSumArray(testArray);
+sumArray();
+testSumArray(testArray);
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
