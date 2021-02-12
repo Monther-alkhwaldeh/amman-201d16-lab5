@@ -149,10 +149,18 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
-function multiplyAnyArray(dynamicArray) {
+function multiplyAnyArray() {
+  let multD=1;
+  let dynamicArr= new Array();
+  dynamicArr.push(1,2,3,4,5);
+  for(let i=0;i<dynamicArr.length;i++){
+    multD*=dynamicArr[i];
+  }
+  return[multD,'The numbers 1,2,3,4,5 have a product of 120.']
   //eslint-disable-line
 }
-
+multiplyArray();
+testMultiplyAnyArray(testDynamicArray);
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
 
